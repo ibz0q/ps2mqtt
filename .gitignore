@@ -1,0 +1,7 @@
+*.dll
+Test.ps1
+**/Start-CCTV/*
+**/Stop-CCTV/*
+**/Start-Xprotect/*
+**/Stop-Xprotect/*
+**/Test/*
