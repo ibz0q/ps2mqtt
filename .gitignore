@@ -1,6 +1,6 @@
 *.dll
 Test.ps1
-**/Start-CCTV/*
+**/Private*/*
 **/Stop-CCTV/*
 **/Start-Xprotect/*
 **/Stop-Xprotect/*
