@@ -5,7 +5,7 @@
 
   
 
-ps2mqtt (or pwsh2mqtt) is small utility that lets you listen and run code based on MQTT events, it's extremely useful for home automation applications.
+ps2mqtt (or PowerShell 2 MQTT) is small utility that lets you listen and run code based on MQTT events, it's extremely useful for home automation applications.
 
   
  E.g. A  file (recipe) under **/Recipe/Open-Chrome/Main.ps1** can be triggered through a message to topic **ps2mqtt/recipe/open-chrome**
