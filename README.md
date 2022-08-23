@@ -1,7 +1,7 @@
 
   
 
-# ps2mqtt 
+# ps2mqtt (PowerShell 2 MQTT)
 
   
 
