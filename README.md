@@ -5,19 +5,18 @@
 
   
 
-ps2mqtt (or PowerShell 2 MQTT) is small utility that lets you listen and run code based on MQTT events, extremely useful for home automation applications.
+ps2mqtt (PowerShell 2 MQTT) lets you listen and run PowerShell code based on MQTT events, extremely useful for home automation applications.
 
   
- E.g. A  file under **/Recipe/Open-Chrome/Main.ps1** can be triggered through a message to topic **ps2mqtt/recipe/open-chrome**
+E.g. A  file under **/Recipe/Open-Chrome/Main.ps1** can be triggered through a message to topic **ps2mqtt/recipe/open-chrome**
 
   
 
 Features:
 
-  
-* Uses open-source .Net MQTT library
+* Written purely in PowerShell and runs with little dependencies  
 
-* Transparent code, Runs entirely in PowerShell + Mqtt DLL
+* Uses open-source .Net MQTT library
 
 * Callback support (know once your script has finished running)
 
