@@ -65,7 +65,7 @@ Try {
                 $RecipePath = $Global:Config.RecipesPath + "\" + $Recipe
                 Write-Host (Get-Date) "EVENT: Checking for recipe $RecipePath..."
             
-                # Security issue, allows for directory traversal 
+                # Fix security issue, allows for directory traversal 
                 If (($Recipe).IndexOfAny([System.IO.Path]::GetInvalidFileNameChars()) -ne -1 ) {
                     Throw "Exception: The folder name ($Recipe) contains invalid characters"
                 }
