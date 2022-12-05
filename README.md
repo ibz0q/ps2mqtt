@@ -36,7 +36,7 @@ Features:
   
 ## Setup
 
-/Client.ps1 should be run as a background job, I have created Utilities/Run-Client.bat to run this file and keep it running in case of failure. It also captures console output and writes it as a log file ../Log.txt. 
+/Client.ps1 should be run as a background job, I have created Utilities/Run-Client.bat to run this file and keep it running in case of failure. It also captures console output and writes it as a log file ../Log.txt. Use the Client.psd1 file to configure this application, I have tried to expose everything I find useful.
 
 I've included an export of my scheduled task Utilities/ps2mqtt.xml to give you an idea how I have it setup to run automatically on start up.
 
@@ -44,14 +44,12 @@ Lastly you need the M2Mqtt dll which can be downloaded from https://www.nuget.or
 
 Hint: The nuget file is an archive. Choose a DLL appropriate to your arch.
 
-## Usage from MQTT
+## Usage
 
-
-The directory "Recipes" should contain the code you wish to expose via MQTT. 
+"Recipes" directory should contain the code you wish to expose via MQTT. 
 
 **Example of a custom Recipe:**
-
-  
+ 
 
 Create a folder inside "Recipes" called EXAMPLE1
 
@@ -91,11 +89,11 @@ You can passthrough any parameters of your choosing seperated by a comma.
 
 These will be made available by using the global variable **$Parameters** inside Main.ps1.
 
-### Passthrough JSON data
+### Passthrough data
 
 You can send JSON data to your Main.ps1 script by publishing JSON data to your topic.
 
-This will be made available using the global variable **$Message** inside Main.ps1.
+This will be made available using the global variable **$Message** inside Main.ps1. Data can be of any type supported by your broker.
 
 ###  Callbacks
 
@@ -108,11 +106,8 @@ When a async or sync task has finished executing a sub topic will be published t
 ## Configuration
 
   
-The script config is available inside:
-> \Config\Client.psd1
-
-  
-  
+The config is inside:
+> \Config\Client.psd1  
 
 #### MQTT Server Settings
 
