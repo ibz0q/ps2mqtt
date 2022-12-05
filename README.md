@@ -30,13 +30,8 @@ Features:
   
 
 ## Why
-
-  
-I wrote this to run in my old home and it was pretty decent so
-I decided to open source this project and share it.
-
-  
-  I wanted to show a Windows Toast on my screen after someone pressed my doorbell, turn on a screen and show a live camera feed of visitors and many other things and no project exists at the time to do this.
+ 
+  I wanted to show a Windows Toast on my screen after someone pressed my doorbell, turn on a screen and show a live camera feed of visitors and many other things, with no good projects out there I wrote one.
   
   
 

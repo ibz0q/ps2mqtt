@@ -1,9 +1,3 @@
-# You may want to change the root topic to the name of your device, the scema is up to you
-# I designed this PS utility to run on several devices in my home
-# To notify me when someones at the door, turn on my door screen and display a Chrome stream of 
-# the front door camera, and many other things. It's very cool and I want to share it with you.
-# Please enjoy it ! 
-
 @{
     MQTT                    = @{ 
         Server          = 'mqtt'
@@ -34,8 +28,9 @@
         KeepAlivePeriod = 10
         Publish_State   = $True
     }
+    ApplicationName         = "ps2mqtt"
     RecipesPath             = ".\Recipes"
     ApplicationLoopInterval = 100
+	ClientDLLPath         = '.\Library\M2Mqtt\M2Mqtt.Net.dll'
     RecipeExecutionType     = "async"
-    ClientDLLPath           = ".\Library\M2Mqtt\M2Mqtt.Net.dll" 
 }
