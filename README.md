@@ -112,7 +112,8 @@ The config is inside:
 
 Set your MQTT server settings within the MQTT block, this includes Server name (can have port) , Schema names of the topics (You can change **ps2mqtt** to the name of your device, in my case I use **door**  because I use a door PC to show a video stream and various other things ) .
 
-  
+
+Recommendation: Ensure you use a private trusted MQTT server (Ideally LAN, otherwise use TLS for servers on WAN).. an attacker could run code directly on your machine using this script. 
 
   
 
