@@ -8,7 +8,7 @@
 ps2mqtt (PowerShell 2 MQTT) lets you run PowerShell code based on MQTT events, useful for home automation applications.
 
   
-E.g. A  file under **/Recipe/Open-Chrome/Main.ps1** can be triggered through a message to topic **ps2mqtt/recipe/open-chrome**
+E.g. A message to topic **ps2mqtt/recipe/open-chrome** will trigger **/Recipe/Open-Chrome/Main.ps1** 
 
   
 
